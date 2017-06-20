@@ -6,3 +6,7 @@ print combined_string
 string_3 = "PAM"
 string_3 = string_3.reverse
 another_string = "This is what's inside string_3: #{string_3}"
+
+compare_1 = 2 != 3
+compare_2 = 4 >= 7
+print compare_1 != compare_2
