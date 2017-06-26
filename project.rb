@@ -27,3 +27,11 @@ elsif weather == "Rainy"
 else
   print "No sun today"
 end
+
+# array
+paths = ["a", "b", "c", "d"]
+puts "There are #{paths.count} paths."
+paths.each {
+  |path| puts "We can go " + path
+}
+puts "Let's go " + paths[-1]
