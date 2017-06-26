@@ -17,3 +17,13 @@ until treasures >= 4
   treasures += 1
   print "Sweet, #{4 - treasures} to go!"
 end
+
+# control flow
+weather = "Sunny"
+if weather == "Sunny"
+  print "Nothing to worry about!"
+elsif weather == "Rainy"
+  print "Bring an umbrella!"
+else
+  print "No sun today"
+end
