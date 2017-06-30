@@ -44,3 +44,14 @@ data = {
 }
 
 puts "The name is #{data["name"]}, his level is #{data["levels"]}. Is he retired? #{data["retired"]}"
+
+# method
+def add(*items)
+  satchel = []
+  items.each do |item|
+    satchel.push(item)
+  end
+  puts satchel
+end
+
+add("bug", "bag", "egg", "banana")
