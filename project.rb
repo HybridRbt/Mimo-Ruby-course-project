@@ -35,3 +35,12 @@ paths.each {
   |path| puts "We can go " + path
 }
 puts "Let's go " + paths[-1]
+
+# hash
+data = {
+  "name" => "Bob Jones",
+  "levels" => 3,
+  "retired" => false
+}
+
+puts "The name is #{data["name"]}, his level is #{data["levels"]}. Is he retired? #{data["retired"]}"
