@@ -71,3 +71,21 @@ end
 light = Flashlight.new
 light.switch_on
 print light.on_off
+
+# module
+module Discovery
+  def jig
+    puts "#{@name} does a jig!"
+  end
+end
+class Explorer
+  include Discovery
+  attr_reader :name
+
+  def initialize(name)
+    @name = name
+  end
+end
+
+bob = Explorer.new("Bob")
+bob.jig
