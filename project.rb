@@ -55,3 +55,19 @@ def add(*items)
 end
 
 add("bug", "bag", "egg", "banana")
+
+# class
+class Flashlight
+  attr_reader :on_off
+  def initialize
+    @on_off = false
+  end
+
+  def switch_on
+    @on_off = true
+  end
+end
+
+light = Flashlight.new
+light.switch_on
+print light.on_off
